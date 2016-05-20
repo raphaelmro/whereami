@@ -24,7 +24,11 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Because I want To Know Where You Are</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Because I want To Know Always Where You Are</string>
+    <key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
