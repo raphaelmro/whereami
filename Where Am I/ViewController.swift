@@ -58,8 +58,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         altitudeResult.text = userLocation.altitude.description
         //setting nearest address
         CLGeocoder().reverseGeocodeLocation(manager.location!) { (placemark, error) in
-            print(location)
-            
             if placemark!.count > 0 {
                 let pm = placemark![0] as CLPlacemark
                 self.displayLocationInfo(pm)
@@ -71,10 +69,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func displayLocationInfo(placemark: CLPlacemark){
         locationManager.stopUpdatingLocation() //stop updating location to save battery life
-        print(placemark.locality)
-        print(placemark.postalCode )
-        print(placemark.administrativeArea)
-        print(placemark.country)
         
         let nearestAddress = placemark.locality! + " " + placemark.postalCode! + " - " + placemark.administrativeArea! + " " + placemark.country!
         
