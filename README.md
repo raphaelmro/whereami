@@ -1,2 +1,9 @@
 # whereami
-App to display where the user is located in swift 2
+App to display where the user is located
+Some info displayed:
+- Longitude
+- Latitude
+- Course
+- Speed
+- Altitude
+- Nearest Address
